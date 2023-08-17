@@ -1,37 +1,50 @@
 h1 a, h2 a {
-    color: red;
-    font-family: 'Lobster';
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
+    margin:0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #f7edee;
     
 }
 
 .page-header {
-    background-color: #C25100;
+    background: #512428;
     margin-top: 0;
     margin-bottom: 40px;
     padding: 20px 20px 20px 40px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .page-header h1,
 .page-header h1 a,
 .page-header h1 a:visited,
 .page-header h1 a:active {
-    color: #ffffff;
+    color: #f8f8f8;
     font-size: 36pt;
     text-decoration: none;
+    font-family: 'Cherry Bomb One', cursive;
+    
+}
+
+.page-header h2 {
+    color: whitesmoke;
 }
 
 h1,
 h2,
 h3,
 h4 {
-    font-family: 'Lobster', cursive;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, cursive;
 }
 
 .date {
-    color: turquoise;
+    color: #8d3f46;
 }
 
 .save {
@@ -44,36 +57,69 @@ h4 {
 }
 
 .top-menu,
+.top-menu p,
 .top-menu:hover,
 .top-menu:visited {
     color: whitesmoke;
-    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20pt;
     margin-right: 20px;
 }
 
 .post {
-    margin-bottom: 70px;
+    margin-bottom: 20px;
+    border: 2px solid #dfb9bc;
+    background-color: #dfb9bc;
+    padding: 7px 14px;
+    border-radius: 10px;
 }
 
 .post h2 a,
 .post h2 a:visited {
-    color: #000000;
+    color: black;
 }
 
 .post > .date,
 .post > .actions {
     float: right;
+    
 }
+
+.post-action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.post-publish-button {
+    display: flex;
+}
+
+#publish-button {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
 
 .btn-secondary,
 .btn-secondary:visited {
-    color: #C25100;
+    color: #512428;
     background: none;
-    border-color: #C25100;
+    border-color: #512428;
+    
 }
 
 .btn-secondary:hover {
     color: #FFFFFF;
-    background-color: #C25100;
+    background-color: #512428;
+}
+
+.comment {
+    margin: 20px 0px 20px 20px;
+}
+
+.content.container {
+    display: flex;
+    justify-content: center;
 }
