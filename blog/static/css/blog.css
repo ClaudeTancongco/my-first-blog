@@ -46,9 +46,9 @@ h4 {
 .top-menu,
 .top-menu:hover,
 .top-menu:visited {
-    color: #ffffff;
-    float: right;
-    font-size: 26pt;
+    color: whitesmoke;
+    
+    font-size: 20pt;
     margin-right: 20px;
 }
 
