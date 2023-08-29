@@ -14,18 +14,18 @@
     <body>
         <div class="page-header">
             <div class='header-logo'>
-            <h1><a href="/">BLOGSPOT </a></h1>
+            <h1><a href="/">BLOG SPOT </a></h1>
             <h2>Your #1 Spot for Blogs!</h2>
             </div>
             {% if user.is_authenticated %}
             <div class='header-options'>
                 <p class="top-menu">Hello, {{ user.username }} <small>(<a href="{% url 'logout' %}">Log out</a>)</small></p>
                 <a href="{% url 'post_new' %}" class="top-menu"><span>NEW</span></a>
-                <a href="{% url 'post_draft_list' %}" class="top-menu"><span>EDIT</span></a>
+                <a href="{% url 'post_draft_list' %}" class="top-menu"><span>DRAFTS</span></a>
             </div>
                 
             {% else %}
-                <a href="{% url 'login' %}" class="top-menu"><span class="glyphicon glyphicon-lock"></span></a>
+                <a href="{% url 'login' %}" class="top-menu"><span>LOGIN</span></a>
             {% endif %}
             
         </div>
