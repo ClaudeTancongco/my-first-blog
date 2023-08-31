@@ -2,6 +2,7 @@ from django.urls import path, include
 from . import views
 from .api.views.blog import BlogRetrieveUpdateDeleteView
 from .api.views.comment import CommentListCreateView, CommentRetrieveUpdateDeleteView
+from .api.views.api_auth import CustomAuthToken
 
 urlpatterns = [
     path('', views.post_list, name='post_list'),
@@ -18,4 +19,5 @@ urlpatterns = [
     path('api/<int:pk>/', BlogRetrieveUpdateDeleteView.as_view()),
     path('apicomment/', CommentListCreateView.as_view()),
     path('apicomment/<int:pk>/', CommentRetrieveUpdateDeleteView.as_view()),
+    path('api-token/', CustomAuthToken.as_view(), name='custom_obtain_token')
 ]
